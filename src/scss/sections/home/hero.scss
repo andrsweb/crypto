@@ -92,8 +92,7 @@
 		@media all and (min-width: $xl) {
 			position: absolute;
 			right: 0;
-			top: 54%;
-			transform: translateY(-50%);
+			top: 10px;
 		}
 	}
 
@@ -108,7 +107,7 @@
 
 		@media all and (min-width: $xxl) {
 			width: 597px;
-			height: 808px;
+			height: 760px;
 		}
 
 		img {
