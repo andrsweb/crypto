@@ -3,7 +3,8 @@
 	box-sizing: border-box
 }
 
-body, html {
+body,
+html {
 	height: 100%;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	margin: 0
@@ -32,6 +33,13 @@ ul {
 	list-style: none
 }
 
+form,
+fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
 .wrapper {
 	position: relative;
 	display: flex;
@@ -42,5 +50,77 @@ ul {
 
 	.footer {
 		margin-top: auto
+	}
+}
+
+.checkbox {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}
+
+.checkbox__wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.checkbox+label {
+	position: relative;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	height: 20px;
+	color: rgb(0, 0, 0);
+}
+
+.checkbox+label::before {
+	content: "";
+	margin-right: 5px;
+	width: 14px;
+	height: 14px;
+	background-color: $white;
+	border-radius: 3px;
+	border: 1px solid #9FA2AE; 
+	box-shadow: none;
+}
+
+.checkbox:checked+label::after {
+	content: "";
+	position: absolute;
+	left: 3px;
+	top: 5px;
+	width: 10px;
+	height: 10px;
+	border-radius: 2px;
+	background-color: $accent;
+}
+
+.button {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: $white;
+	font-family: $ff;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: $fw-bold;
+	line-height: normal;
+	letter-spacing: 1.1px;
+	padding: 20px;
+	border: 0;
+	background-color: $accent;
+	border-radius: 68px;
+	cursor: pointer;
+	white-space: nowrap;
+	transition: background-color ease $tr;
+
+	&:hover {
+		background-color: #EA6A03; 
 	}
 }

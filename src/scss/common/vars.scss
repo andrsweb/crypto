@@ -1,6 +1,6 @@
 // Grid.
 $xs	: 375px;
-$sm	: 480px;
+$sm	: 570px;
 $md	: 768px;
 $lg	: 992px;
 $xl	: 1200px;
@@ -9,7 +9,7 @@ $xxl: 1366px;
 // Container max-width.
 $container-md: 760px;
 $container-lg: 990px;
-$container-xl: 1200px;
+$container-xl: 1320px;
 
 // Container padding.
 $container-padding: 24px;
@@ -25,10 +25,7 @@ $fs-lg	: 18px;
 $fs-xl	: 20px;
 
 // Font weights.
-$fw-light	: 300;
 $fw-regular	: 400;
-$fw-medium	: 500;
-$fw-semibold: 600;
 $fw-bold	: 700;
 
 // Line heights.
@@ -38,6 +35,10 @@ $lh-title	: 1.3;
 // Colors.
 $white	: #FFFFFF;
 $black	: #000000;
+$accent	: #FA882C;
+$text	: #262121;
+$grey   : #767676;
+$light  : #939393;
 
 // Others.
 $tr: 0.35s;
