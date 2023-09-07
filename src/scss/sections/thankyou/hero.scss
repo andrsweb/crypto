@@ -1,6 +1,14 @@
 .thankyou {
-	padding: 70px 0 91px;
+	padding: 31px 0 50px;
 	position: relative;
+
+	@media all and (min-width: $sm) {
+		padding: 53px 0 50px;
+	}
+
+	@media all and (min-width: $lg) {
+		padding: 70px 0 91px;
+	}
 
 	&__text_info {
 		color: $black;
@@ -10,29 +18,47 @@
 		font-style: normal;
 		font-weight: $fw-regular;
 		line-height: normal;
-		margin-bottom: 15px;
+		margin-bottom: 7px;
+
+		@media all and (min-width: $sm) {
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+
+		@media all and (min-width: $lg) {
+			margin-bottom: 15px;
+		}
 	}
 
 	&__title {
 		color: $accent;
 		text-align: center;
 		font-family: $ff;
-		font-size: 40px;
+		font-size: 22px;
 		font-style: normal;
 		font-weight: $fw-bold;
 		line-height: normal;
-		margin-bottom: 15px;
+		margin-bottom: 19px;
+
+		@media all and (min-width: $sm) {
+			font-size: 40px;
+			margin-bottom: 20px;
+		}
+
+		@media all and (min-width: $lg) {
+			margin-bottom: 15px;
+		}
 	}
 
 	.h1 {
 		color: #202020;
 		text-align: center;
 		font-family: $ff;
-		font-size: 40px;
+		font-size: 22px;
 		font-style: normal;
 		font-weight: $fw-bold;
 		line-height: normal;
-		margin-bottom: 15px;
+		margin-bottom: 19px;
 
 		.old_price {
 			position: relative;
@@ -53,6 +79,15 @@
 			background-color: $accent;
 			border-radius: 10px;
 		}
+
+		@media all and (min-width: $sm) {
+			font-size: 40px;
+			margin-bottom: 42px;
+		}
+
+		@media all and (min-width: $lg) {
+			margin-bottom: 15px;
+		}
 	}
 
 	&__items_wrapper {
@@ -64,7 +99,9 @@
 
 	&__items {
 		display: flex;
+		flex-wrap: wrap;
 		margin: 0 -10px;
+		justify-content: center;
 
 		&_title {
 			color: #262121;
@@ -79,8 +116,23 @@
 	}
 
 	&__item {
-		width: calc(100% / 5);
+		width: calc(100% / 1);
 		padding: 0 10px;
+		margin-bottom: 15px;
+		min-height: 62px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		@media all and (min-width: $sm) {
+			width: calc(100% / 2);
+			min-height: 81px;
+		}
+
+		@media all and (min-width: $xl) {
+			width: calc(100% / 5);
+		}
 
 		&_text {
 			display: flex;
@@ -120,6 +172,11 @@
 	&__bottom {
 		display: flex;
 		justify-content: space-between;
+		flex-direction: column;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+		}
 	}
 
 	&__count_wrapper {
@@ -130,26 +187,58 @@
 		align-items: center;
 		justify-content: center;
 		background-color: $white;
-		box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.05); 
+		padding: 20px 40px;
+		box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.05);
+		order: 1;
+
+		@media all and (min-width: $sm) {
+			padding: 30px 85px;
+		}
+
+		@media all and (min-width: $lg) {
+			order: 2;
+			padding: 117px 0;
+		}
+	}
+
+	.form {
+		order: 2;
+
+		@media all and (min-width: $lg) {
+			order: 1;
+		}
 	}
 
 	&__count_title {
 		color: #202020;
 		text-align: center;
 		font-family: $ff;
-		font-size: 30px;
+		font-size: 16px;
 		font-style: normal;
 		font-weight: $fw-bold;
 		line-height: normal;
+		margin-bottom: 10px;
+
+		@media all and (min-width: $sm) {
+			font-size: 30px;
+		}
 	}
 
 	&__count {
 		color: #202020;
 		text-align: center;
 		font-family: $ff;
-		font-size: 90px;
+		font-size: 50px;
 		font-style: normal;
 		font-weight: $fw-bold;
 		line-height: normal;
+
+		@media all and (min-width: $sm) {
+			font-size: 70px;
+		}
+
+		@media all and (min-width: $lg) {
+			font-size: 90px;
+		}
 	}
 }
