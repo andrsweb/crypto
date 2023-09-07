@@ -83,6 +83,9 @@ fieldset {
 	margin-right: 5px;
 	width: 14px;
 	height: 14px;
+	position: absolute;
+	left: 0;
+	top: 0;
 	background-color: $white;
 	border-radius: 3px;
 	border: 1px solid #9FA2AE; 
@@ -93,7 +96,7 @@ fieldset {
 	content: "";
 	position: absolute;
 	left: 3px;
-	top: 5px;
+	top: 3px;
 	width: 10px;
 	height: 10px;
 	border-radius: 2px;
@@ -107,7 +110,7 @@ fieldset {
 	align-items: center;
 	color: $white;
 	font-family: $ff;
-	font-size: 22px;
+	font-size: 18px;
 	font-style: normal;
 	font-weight: $fw-bold;
 	line-height: normal;
@@ -122,5 +125,9 @@ fieldset {
 
 	&:hover {
 		background-color: #EA6A03; 
+	}
+
+	@media all and (min-width: $sm) {
+		font-size: 22px;
 	}
 }
